@@ -6,7 +6,7 @@ namespace FlowApp.Repository
     {
         Task<bool> InsertAsync(HabitCheckBase habitCheck);
         Task<List<HabitCheckBase>> GetAsync();
-        Task<List<HabitCheckBase>> GetPaginatedAsync(int offset = 0, int limit = 10);
+        Task<List<HabitCheckBase>> GetPaginatedAsync(int offset, int limit);
         Task<List<HabitCheckBase>> FindByPrefixAsync(string prefix);
         Task<bool> UpdateAsync(HabitCheckBase habitCheck);
     }
